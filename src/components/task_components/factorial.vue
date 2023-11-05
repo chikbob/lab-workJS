@@ -40,7 +40,7 @@ function calcFactorial(num) {
   flex-direction: column;
   align-items: center;
 
-  margin: 2rem 0;
+  margin: 2rem 0 0;
 
   &__block {
     display: flex;
