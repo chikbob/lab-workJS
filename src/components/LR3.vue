@@ -25,7 +25,7 @@ import even_and_odd_array from "./task_components/even_and_odd_array.vue";
 
 <style lang="scss" scoped>
 .block {
-  height: 84vh;
+  height: auto;
 
   &__text {
     display: flex;

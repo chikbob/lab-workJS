@@ -3,7 +3,7 @@
     <div class="even_and_odd_array__block">
       <button @click="generateArray" class="even_and_odd_array__block-button">Генерировать</button>
       <div class="even_and_odd_array__block-text">{{ newMassive }}</div>
-      <div class="even_and_odd_array__block-text">Количество нечетных чисел: {{ dev3Massive.length }}</div>
+      <div class="even_and_odd_array__block-text">Количество нечетных чисел: {{ dev3count - 1 }}</div>
     </div>
   </div>
 </template>
@@ -12,14 +12,14 @@
 import {ref} from "vue";
 
 let newMassive = ref([])
-let dev3Massive = [];
+let dev3count = 0;
 
 function randomIntFromInterval(min, max) { // min and max included
-  return Math.floor(Math.random() * (max - min + 1) + min)
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 function generateArray() {
-  dev3Massive = [] // Для очистки массива, чтобы не было переполнения
+  dev3count = 0;
   const massive = [];
   for (let i = 0; i <= randomIntFromInterval(5, 15); i++) {
     massive.push(randomIntFromInterval(-99, 99))
@@ -29,18 +29,14 @@ function generateArray() {
 }
 
 function checkDev3(massive) {
+  console.log(massive.length)
   for (let i = 0; i <= massive.length; i++) {
-    if (massive[i] % 3 === 0 || massive[i] % 5 === 0 || massive[i] % 7 === 0) {
-      dev3Massive.push(massive[i])
+    if (massive[i] % 2 === 0) {
+    } else if (massive[i] === 0) {
     } else {
-      console.log('aboba')
+      dev3count++;
     }
   }
-  return dev3Massive
-}
-
-function calcArray() {
-
 }
 </script>
 
