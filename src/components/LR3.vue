@@ -14,13 +14,19 @@
       массиве (как положительных, так и отрицательных), и выводить информацию о количестве нечетных чисел пользователю.
       <even_and_odd_array/>
     </div>
+    <div class="block__task">
+      Задание №3: Инициализируйте массив следующим образом: const myArr = [3, 35, 18, 20, 16, 23, 5];
+      <br> Затем составьте программу с использованием языка JavaScript для определения количества элементов массива,
+      которые больше чем величина среднего значения всех элементов массива.
+      <find_average_in_array/>
+    </div>
   </div>
 </template>
 
 <script setup>
 import factorial from "./task_components/factorial.vue";
 import even_and_odd_array from "./task_components/even_and_odd_array.vue";
-
+import find_average_in_array from "./task_components/find_average_in_array.vue";
 </script>
 
 <style lang="scss" scoped>
