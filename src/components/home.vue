@@ -10,14 +10,14 @@
 
 <style lang="scss" scoped>
 .home {
-  height: 84vh;
+  height: auto;
 
   &__text {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    height: 84vh;
+    height: 92vh;
 
     font-size: 10rem;
 

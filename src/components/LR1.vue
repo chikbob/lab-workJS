@@ -10,6 +10,6 @@
 
 <style lang="scss" scoped>
 .block {
-  height: 84vh;
+  height: 92vh;
 }
 </style>

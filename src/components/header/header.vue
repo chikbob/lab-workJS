@@ -36,7 +36,6 @@
     justify-content: flex-end;
 
     width: 90%;
-    height: 5rem;
 
     &-main {
       display: flex;
