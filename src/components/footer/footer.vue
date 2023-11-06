@@ -6,7 +6,7 @@
       </a>
       <a href="https://github.com/chikbob/lab-workJS" target="_blank" class="footer__text">
         <img class="footer__img" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg"
-             alt="github">
+             alt="git hub">
       </a>
     </div>
     <div class="footer__block-mini">
