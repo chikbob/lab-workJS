@@ -4,10 +4,12 @@
       ЛР№1
     </div>
     <CalcProductLr1 @addToCart="addToCart"/>
-    <Basket v-for="item in basket"
-            :code="item.newCode"
-            :mass="item.newMass"
-            :final="item.newFinal">
+    <Basket @deleteItem="deleteItem" v-for="item in basket"
+            :key="item.id"
+            :id="item.id"
+            :code="item.code"
+            :mass="item.mass"
+            :final="item.final">
     </Basket>
   </div>
 </template>
@@ -20,7 +22,12 @@ import Basket from "./task_components/basket.vue";
 const basket = ref([]);
 
 function addToCart(data) {
+  data.id = basket.value.length + 1;
   basket.value.push(data);
+}
+
+function deleteItem(data) {
+  basket.value = basket.value.filter(item => item.id !== data)
 }
 </script>
 

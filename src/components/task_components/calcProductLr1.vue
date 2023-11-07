@@ -28,6 +28,7 @@ let newFinal = ref(0);
 let newCode = ref(0)
 let newMass = ref(0)
 let TextFinal = ref("Введенный код отсутствует");
+let id = ref(0)
 
 const emits = defineEmits();
 
@@ -78,17 +79,14 @@ function checkCode(code, mass) {
 }
 
 function addToCart() {
-  console.log(code.value)
-  console.log(mass.value)
   if (code.value > 10 || code.value < 1) {
   } else {
     if (mass.value <= 0) {
     } else {
-      emits("addToCart", {newCode, newMass, newFinal});
+      emits("addToCart", { id: id.value, code: newCode, mass: newMass, final: newFinal });
+      id.value += 1;
     }
   }
-
-
 }
 </script>
 
