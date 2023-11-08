@@ -11,6 +11,7 @@
             :mass="item.mass"
             :final="item.final">
     </Basket>
+    <div class="block__text">Итоговая сумма: {{ sumPrice }} рублей</div>
   </div>
 </template>
 
@@ -20,14 +21,31 @@ import {ref} from "vue";
 import Basket from "./task_components/basket.vue";
 
 const basket = ref([]);
+let sumPrice = ref(0)
 
 function addToCart(data) {
-  data.id = basket.value.length + 1;
+  data.id += 1;
   basket.value.push(data);
+  let flag = 1
+  calcSum(flag)
 }
 
 function deleteItem(data) {
   basket.value = basket.value.filter(item => item.id !== data)
+  let flag = 0
+  calcSum(flag)
+}
+
+function calcSum(flag) {
+  sumPrice.value = 0;
+  for (let i = 0; i < basket.value.length; i++) {
+    if (flag === 1) {
+      sumPrice.value += Math.abs(parseFloat(basket.value[i].final))
+    } else {
+      sumPrice.value -= Math.abs(parseFloat(basket.value[i].final))
+      sumPrice.value = Math.abs(sumPrice.value)
+    }
+  }
 }
 </script>
 
