@@ -69,6 +69,8 @@ function checkCode(code, mass) {
   final = final.toFixed(2);
   if (code > 10) {
     TextFinal.value = "Введенный код отсутствует";
+  } else if (mass < 0) {
+    TextFinal.value = "Масса имеет отрицательное значение!"
   } else {
     TextFinal.value = "Цена: " + final + " рублей";
   }
@@ -83,7 +85,7 @@ function addToCart() {
   } else {
     if (mass.value <= 0) {
     } else {
-      emits("addToCart", { id: id.value, code: newCode, mass: newMass, final: newFinal });
+      emits("addToCart", {id: id.value, code: newCode, mass: newMass, final: newFinal});
       id.value += 1;
     }
   }
