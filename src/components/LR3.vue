@@ -38,20 +38,25 @@ import find_average_in_array from "./task_components/find_average_in_array.vue";
     justify-content: center;
     align-items: center;
 
-    margin: 2rem 0;
+    width: 50%;
+
+    margin: 2rem auto;
+
+    //background: rgba(215, 215, 215, 0.4);
   }
 
   &__task {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    //background: rgba(215, 215, 215, 0.4);
 
     text-align: justify;
 
-    width: 60%;
+    width: 55%;
 
     margin: 2rem auto;
+
+    &:last-child {
+      margin: 2rem auto 0;
+    }
   }
 }
 </style>

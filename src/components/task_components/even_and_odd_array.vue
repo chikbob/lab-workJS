@@ -71,7 +71,11 @@ function checkDev3(massive) {
     &-text {
       display: flex;
 
-      margin: 1rem 0 0 0;
+      margin: 2rem 0 0 0;
+
+      &:last-child {
+        margin: 1rem 0 0 0;
+      }
     }
   }
 }

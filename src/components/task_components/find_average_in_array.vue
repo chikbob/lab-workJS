@@ -3,10 +3,8 @@
     <div class="find_average_in_array__block">
       <button @click="generateArray" class="find_average_in_array__block-button">Генерировать</button>
       <div class="find_average_in_array__block-text">{{ newMassive }}</div>
-      <div class="find_average_in_array__block-text">Среднее арифметическое: {{ average.toFixed(2) }}
-        <br>
-        Массив: {{ greaterNumbers }}
-      </div>
+      <div class="find_average_in_array__block-text">Среднее арифметическое: {{ average.toFixed(2) }}</div>
+      <div class="find_average_in_array__block-text">Массив: {{ greaterNumbers }}</div>
     </div>
   </div>
 </template>
@@ -63,6 +61,7 @@ onBeforeMount(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   margin: 2rem 0;
 
@@ -88,8 +87,17 @@ onBeforeMount(() => {
 
     &-text {
       display: flex;
+      justify-content: center;
 
-      margin: 1rem 0 0 0;
+      margin: 2rem 0 0 0;
+
+      &:last-child {
+        margin: 1rem auto 0;
+      }
+
+      &:nth-last-child(2) {
+        margin: 1rem auto 0;
+      }
     }
   }
 }

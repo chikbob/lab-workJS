@@ -47,12 +47,6 @@ function calcFactorial(num) {
     justify-content: center;
     align-items: center;
 
-    margin: 0 0 1rem 0;
-
-    &-text {
-
-    }
-
     &-input {
       width: 5rem;
       border: #212121 solid 3px;
@@ -70,7 +64,7 @@ function calcFactorial(num) {
 
   &__number {
     display: flex;
-
+    margin: 1rem 0 0 0;
   }
 
 }

@@ -42,8 +42,9 @@ function calcSum(flag) {
     if (flag === 1) {
       sumPrice.value += Math.abs(parseFloat(basket.value[i].final))
     } else {
-      sumPrice.value -= Math.abs(parseFloat(basket.value[i].final))
-      sumPrice.value = Math.abs(sumPrice.value)
+      console.log(basket.value)
+      sumPrice.value += parseFloat(basket.value[i].final)
+      console.log(sumPrice.value)
     }
   }
 }
