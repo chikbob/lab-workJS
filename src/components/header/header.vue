@@ -4,8 +4,7 @@
       <router-link class="header__link-main" to="/">Домой</router-link>
     </div>
     <div class="header__block">
-      <router-link class="header__link" to="/lr1">ЛР№1</router-link>
-      <router-link class="header__link" to="/lr2">ЛР№2</router-link>
+      <router-link class="header__link" to="/lr1_and_2">ЛР№1-2</router-link>
       <router-link class="header__link" to="/lr3">ЛР№3</router-link>
     </div>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="block">
     <div class="block__text">
-      ЛР№1
+      ЛР№1-2
     </div>
     <CalcProductLr1 @addToCart="addToCart"/>
     <Basket @deleteItem="deleteItem" v-for="item in basket"
