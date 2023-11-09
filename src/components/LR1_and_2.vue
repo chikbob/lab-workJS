@@ -53,7 +53,7 @@ function calcSum(flag) {
 <style lang="scss" scoped>
 .block {
   height: auto;
-  min-height: 77.5vh;
+  min-height: 77.2vh;
   display: flex;
   justify-content: center;
   flex-direction: column;

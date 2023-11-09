@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
 
-    height: 77.5vh;
+    height: 77.2vh;
 
     font-size: 10rem;
 
