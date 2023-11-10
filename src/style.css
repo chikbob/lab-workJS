@@ -21,6 +21,10 @@ body::-webkit-scrollbar-thumb {
     background: linear-gradient(#4094AE, #137DA5, #633796, #CA2C9B, #C367A6, #DA99B1);
 }
 
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#72c6e0, #45afd7, #9569c8, #fc5ecd, #f599d8, #ff99b1);
+}
+
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
     background: transparent;
