@@ -6,6 +6,7 @@
     <div class="header__block">
       <router-link class="header__link" to="/lr1_and_2">ЛР№1-2</router-link>
       <router-link class="header__link" to="/lr3">ЛР№3</router-link>
+      <router-link class="header__link" to="/lr4">ЛР№4</router-link>
     </div>
   </div>
 </template>
